@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.contanier {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #ff4959, #ff7ba5, #fcaddd, #f3d9f9, #ffffff);
+}
+
+
+#modelbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+
+.offer-text {
+    padding: 20px 40px 40px 40px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.offer-text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.offer-text small {
+    display: block;
+    color: #ff2b4e;
+    font-weight: 400;
+    font-size: 25PX;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.offer-text form {
+    margin-top: 30px;
+    display: flex;
+    background: #efefef;
+    border-radius: 4px;
+}
+
+p {
+    text-align: center;
+}
+
+.button-b1 {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    background: #ff2b4e;
+    cursor: pointer;
+    border-radius: 17px;
+    border: none;
+    margin-top: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-b1:hover {
+    opacity: .7;
+}
+
+.button-b1:active {
+    opacity: .4;
+}
+
+/*.offer-text form input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 12px 10px;
+}
+
+.offer-text form button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #ff2b4e;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 4px;
+}*/
+
+.close-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    #modelbox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .offer-text h2 {
+        font-size: 25px;
+    }
+    
+}
